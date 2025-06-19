@@ -83,7 +83,7 @@ Make requests to:
 - `PUT /tasks/:id`
 - `DELETE /tasks/:id`
 
-Base URL: `NEXT_PUBLIC_API_URL=http://localhost:3001`
+Base URL: `https://task-manager-backend-rq2j.onrender.com`
 
 ### Third-party packages
 
