@@ -1,0 +1,61 @@
+.HomeContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.topBar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header{
+    text-align: flex-start;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;              /* ✅ This is the magic */
+}
+
+
+/* AddTaskButton already styled */
+.AddTaskButton {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.AddTaskButton:hover {
+  background-color: darkblue;
+}
+
+@media (max-width: 600px) {
+  .topBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .AddTaskButton {
+    width: 100%;
+  }
+}
+

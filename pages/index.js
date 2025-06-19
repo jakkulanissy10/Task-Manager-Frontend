@@ -2,8 +2,12 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import TaskList from "../components/TaskList";
 import { useRouter } from "next/router";
+import Link from 'next/link';
+import styles from './index.module.css'
 
-const API = "http://localhost:3000/tasks";
+
+
+const API = "https://task-manager-backend-rq2j.onrender.com/tasks";
 
 export default function Home() {
   const [tasks, setTasks] = useState([]);
@@ -28,26 +32,38 @@ export default function Home() {
     router.push({
       pathname: `/edit/${task.id}`,
     });
-    // In Next.js, we re-fetch in edit page instead of passing state
+   
   };
 
   const filteredTasks =
     filter === "all" ? tasks : tasks.filter((t) => t.status === filter);
 
   return (
-    <div>
+    <>
+    
+    <div className = {styles.topBar}>
+        
+        <div className={styles.actions}>
+            <h1 className = {styles.header}>Hello, User!</h1>
       <select onChange={(e) => setFilter(e.target.value)} value={filter}>
         <option value="all">All</option>
         <option value="todo">To Do</option>
         <option value="in-progress">In Progress</option>
         <option value="completed">Completed</option>
       </select>
-
+      </div>
+          
       <TaskList
         tasks={filteredTasks}
         onEdit={handleEdit}
         onDelete={handleDelete}
       />
+
+      <Link href="/add">
+  <button className = {styles.AddTaskButton}>Add Task</button>
+</Link>
+
     </div>
+    </>
   );
 }

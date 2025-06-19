@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 
 const API = "http://localhost:3000/tasks";
 
+// Add Form 
+
 export default function AddTask() {
   const [form, setForm] = useState({
     title: "",
@@ -15,6 +17,8 @@ export default function AddTask() {
 
   const router = useRouter();
 
+// Handle form submission and state management 
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -22,7 +26,7 @@ export default function AddTask() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios.post(API, form);
-    router.push("/"); // redirect to homepage after adding
+    router.push("/"); // redirect to homepage after submitting
   };
 
   return (
