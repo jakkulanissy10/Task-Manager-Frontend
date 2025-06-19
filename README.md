@@ -89,3 +89,20 @@ Base URL: `https://task-manager-backend-rq2j.onrender.com`
 
 - Tailwind CSS
 - Axios  API calls
+
+### Optional Features Implemented
+
+   **Form Validation**:
+  - All required fields (`title`, `status`) are enforced in the form using `required` attributes.
+  - Prevents form submission if values are missing.
+
+   **Task Filtering**:
+  - Added a simple status filter on the home page.
+  - Users can filter tasks by `todo`, `in_progress`, or `done`.
+  - Filtering is handled on the client side.
+
+   **Responsive Design**:
+  - Fully responsive using css Modules classes.
+  - Layout adjusts for mobile, tablet, and desktop.
+  - Tested with different screen sizes for flexibility.
+
