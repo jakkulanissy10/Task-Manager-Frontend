@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import TaskForm from "../../components/TaskForm";
 
-const API = "http://localhost:3000/tasks";
+const API = "https://task-manager-backend-rq2j.onrender.com/tasks";
 
 export default function EditTask() {
 
