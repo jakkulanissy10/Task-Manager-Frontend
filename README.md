@@ -88,4 +88,4 @@ Base URL: `NEXT_PUBLIC_API_URL=http://localhost:3001`
 ### Third-party packages
 
 - Tailwind CSS
-- Axios or fetch (your choice for API calls)
+- Axios  API calls
