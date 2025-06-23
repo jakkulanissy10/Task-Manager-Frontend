@@ -106,19 +106,7 @@ Base URL: `https://task-manager-backend-rq2j.onrender.com`
   - Layout adjusts for mobile, tablet, and desktop.
   - Tested with different screen sizes for flexibility.
 
-### Important Note
+### Note
 
-The previously submitted backend link  
-https://task-manager-backend-rq2j.onrender.com  
-is no longer active due to Render platform limits.
+The backend may temporarily sleep due to Render free tier, but it is now working properly. Please wait a few seconds if it takes time to load.
 
-### Updated Backend Link
-
-Please use this working backend URL:  
-https://task-manager-backend-1-w09d.onrender.com
-
-### Project Status
-
-The project is now fully functional again.  
-UI video remains valid and shows the complete working flow.  
-Thank you for your understanding.
